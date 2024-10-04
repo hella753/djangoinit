@@ -1,0 +1,9 @@
+.idea/
+__pycache__/
+djangoinit/__pycache__/
+order/__pycache__/
+order/migrations/__pycache__/
+store/__pycache__/
+store/migrations/__pycache__/
+venv/
+.env
