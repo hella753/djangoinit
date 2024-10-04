@@ -7,7 +7,7 @@ Project uses Django and sqlite3 database.
 Project Structure:
 ```
 djangoinit/
-├── django_init
+├── djangoinit
 │   ├── __init__.py
 │   ├── asgi.py
 │   ├── settings.py
