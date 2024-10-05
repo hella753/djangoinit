@@ -41,7 +41,11 @@ djangoinit/
 ```
 
 Database name: `db` <br>
-Tables created: `order_order` and `store_category`
+Tables created: `order_order` and `store_category`<br>
+
+Primary keys: `order_id` and `category_id` <br>
+Foreign keys in `order_order`: `order_customer_id`, `order_category_id`<br>
+
 Each table has 3 records for testing purposes.
 
 Table Structures:
@@ -54,9 +58,9 @@ Table Structures:
 
 **store_category:**
 
-| category_id | category_name | category_description | category_product_count |
-|-------------|---------------|----------------------|------------------------|
-| 1           | _name_        | _description_        | _count_                |
+| category_id | category_name | category_description | category_product_count | category_image |
+|-------------|---------------|----------------------|------------------------|----------------|
+| 1           | _name_        | _description_        | _count_                | _url_          |
 
 
 ## **Components** ##
@@ -66,7 +70,7 @@ Table Structures:
 
 ## **Features** ##
 * **Homepage** - Can be accessed at `/` or `/store/` Displays the categories.
-* **Category Detail Page** - Can be accessed at `/store/{category_id}/` Displays the products in the category.
+* **Category Detail Page** - Can be accessed at `/store/category/{category_id}/` or `/category/{category_id}/` Displays the products in the category.
 * **Order Page** - Can be accessed at `/order/` Displays the orders.
 * **Order Detail Page** - Can be accessed at `/order/{order_id}/` Displays the details of each order.
 * **Admin Panel** - Can be accessed at `/admin/`. Default username: `admin`, password: `admin`.
@@ -74,7 +78,7 @@ Table Structures:
 
 ## Dependencies
 * **Python 3.X**
-* **Django==5.1.1**
+* **Django 5.1.1**
 
 ## Usage
 Clone the repository:
