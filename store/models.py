@@ -6,3 +6,6 @@ class Category(models.Model):
     category_name = models.CharField(max_length=100)
     category_description = models.TextField()
     category_product_count = models.IntegerField(default=0)
+
+    def __str__(self):
+        return f"{self.category_name} | {self.category_product_count} items"
