@@ -90,11 +90,6 @@ To install the dependencies, use the following command in your terminal:
 ```bash
 pip install -r requirements.txt
 ```
-Run the following command to create the database:
-```bash
-python manage.py migrate
-```
-
 To run the development server, use the following command in your terminal:
 ```bash
 python manage.py runserver
