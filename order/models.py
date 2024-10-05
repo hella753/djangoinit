@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from store.models import Category
 import datetime
 
+
 class Order(models.Model):
     order_id = models.AutoField(primary_key=True)
     order_date = models.DateField(default=datetime.date.today)
