@@ -19,21 +19,38 @@ def index(request):
     <html>
         <head>
             <title>Orders Page</title>
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+            <link 
+                rel="preconnect" 
+                href="https://fonts.googleapis.com">
+            <link 
+                rel="preconnect" 
+                href="https://fonts.gstatic.com"
+                crossorigin>
+            <link 
+                href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" 
+                rel="stylesheet">
         </head>
-        <body style="background-color: #F7EFE5; color: #674188; font-family:Afacad Flux">
+        <body style="background-color: #F7EFE5; 
+              color: #674188; 
+              font-family:Afacad Flux">
             <a href="/">Go Back</a>
-            <h1 style="text-align: center">Welcome to the orders page</h1>
-            <p style="text-align: center">Here you can view all orders</p>
+            <h1 style="text-align: center">
+                Welcome to the orders page
+            </h1>
+            <p style="text-align: center">
+                Here you can view all orders
+            </p>
             <p style="text-align: center">
                 Click on the order to view details
             </p>
             <div>
-                <h2 style="text-align: center;  margin-top:70px">Your Orders</h2>
-                <ul style="list-style-type: none; font-size: 20px; margin-left:300px">
-                    <li style="background-color:#C8A1E0; width:740px">
+                <h2 style="text-align: center;  margin-top:70px">
+                    Your Orders
+                </h2>
+                <ul style="list-style-type: none;
+                    font-size: 20px; 
+                    margin-left:300px">
+                    <li style="background-color:#C8A1E0; width:760px">
                         <a style="text-decoration: none; 
                                   color:#674188;"
                             href="/order/1">
@@ -43,7 +60,7 @@ def index(request):
                             Product ID: {order_list[0]["product id"]}
                         </a>
                     </li>
-                    <li style="background-color:#E2BFD9; width:740px">
+                    <li style="background-color:#E2BFD9; width:760px">
                         <a style="text-decoration: none; 
                                  color:#674188;"
                             href="/order/2">
@@ -53,7 +70,7 @@ def index(request):
                             Product ID: {order_list[1]["product id"]}
                         </a>
                     </li>
-                    <li style="background-color:#E2BFD9; width:740px">
+                    <li style="background-color:#E2BFD9; width:760px">
                         <a style="text-decoration: none; 
                                   color:#674188;"
                             href="/order/3">
@@ -76,20 +93,32 @@ def individual_order(request, order_id):
     <html>
         <head>
             <title>Order Page {order_id}</title>
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+            <link 
+                rel="preconnect" 
+                href="https://fonts.googleapis.com">
+            <link 
+                rel="preconnect" 
+                href="https://fonts.gstatic.com" crossorigin>
+            <link 
+                href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" 
+                rel="stylesheet">
         </head>
-        <body style="background-color: #F7EFE5; color: #674188; font-family:Afacad Flux">
+        <body style="background-color: #F7EFE5; 
+              color: #674188; 
+              font-family:Afacad Flux">
             <a style="color:#674188">
                 Go back to <a href="/order">Orders Page</a>
             </a>
-            <h1 style="text-align: center; margin-top: 70px">Order {order_id}</h1>
+            <h1 style="text-align: center; margin-top: 70px">
+                Order {order_id}
+            </h1>
             <p style="text-align: center">
                 Here you can view the details of Order {order_id}
             </p>
             <div>
-                <h2 style="text-align: center; margin-top:50px">Order Details</h2>
+                <h2 style="text-align: center; margin-top:50px">
+                    Order Details
+                </h2>
                 <ul style="list-style-type: none;
                            font-size: 20px;
                            width:300px;
@@ -119,7 +148,7 @@ def individual_order(request, order_id):
                         Order Address : {order.order_address}
                     </li>
                     <li style="color:#674188;">
-                        Category ID : {order.order_category_id}
+                        Category : {order.order_category_id}
                     </li>
                 </ul>
             </div>

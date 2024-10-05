@@ -8,12 +8,22 @@ def index(request):
     <html>
         <head>
             <title>Store</title>
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+            <link 
+                rel="preconnect" 
+                href="https://fonts.googleapis.com">
+            <link 
+                rel="preconnect" 
+                href="https://fonts.gstatic.com" crossorigin>
+            <link 
+                href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" 
+                rel="stylesheet">
         </head>
-        <body style="background-color: #F7EFE5; color: #C8A1E0; font-family:Afacad Flux">
-            <h1 style="text-align: center; margin-top: 50px">Store</h1>
+        <body style="background-color: #F7EFE5; 
+              color: #C8A1E0; 
+              font-family:Afacad Flux">
+            <h1 style="text-align: center; margin-top: 50px">
+                Store
+            </h1>
             <p style="text-align: center; margin-bottom:150px">
                 Welcome to the store!
                 Shop what's trending this season
@@ -22,7 +32,8 @@ def index(request):
                 Here you can browse our products by category.
             </p>
             <p style="text-align: center">
-                Click on a category to view the products in that category.
+                Click on a category to view the 
+                products in that category.
             </p>
             <div style="text-align: center">
                 <div style="display: inline-block; margin-right:30px">
@@ -78,12 +89,20 @@ def category(request, category_id):
     content=f"""
     <html>
         <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+            <link 
+                rel="preconnect" 
+                href="https://fonts.googleapis.com">
+            <link 
+                rel="preconnect" 
+                href="https://fonts.gstatic.com" crossorigin>
+            <link 
+                href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" 
+                rel="stylesheet">
             <title>{categories.category_name}</title>
         </head>
-        <body style="background-color: #F7EFE5; color: #E2BFD9; font-family: Afacad Flux">
+        <body style="background-color: #F7EFE5; 
+              color: #E2BFD9; 
+              font-family: Afacad Flux">
             <a href="/">Go Back </a>
             <h1 style="text-align: center">{categories.category_name}</h1>
             <h2 style="text-align: center">
@@ -94,9 +113,12 @@ def category(request, category_id):
                     {categories.category_description}
                 </p>
                 <p style="color:#674188">
-                    Number of Products in the Category: {categories.category_product_count}
+                    Number of Products 
+                    in the Category: {categories.category_product_count}
                 </p>
-                <p style="text-align: center">Here you can view the products</p>
+                <p style="text-align: center">
+                    Here you can view the products
+                </p>
             </div>
             <div>
                 <div style="font-size: 20px; text-align: center">
